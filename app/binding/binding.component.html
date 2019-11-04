@@ -1,0 +1,7 @@
+<h1> Bonjour {{nom.length}}</h1>
+<p>tnom en maj:{{maj}}</p>
+<p>taille du chaine{{taille}}</p>
+<p>{{infos()}}</p>
+<input type="text" #textbox>
+
+<button bind-disabled="!actif" (click)="onAffiche(textbox.value)">afficher</button>

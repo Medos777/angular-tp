@@ -1,0 +1,5 @@
+<h1>Liste des candidats </h1>
+<p><img [src]="tabCandidats[0].image"/>Nom:{{tabCandidats[0].nom}} <input type="checkbox" [checked]="!tabCandidats[0].parti">Indépendant Nb Followers:{{tabCandidats[0].nb}} <button (click)="add1(0)">follow</button> </p>
+<p><img [src]="tabCandidats[1].image"/>Nom:{{tabCandidats[1].nom}} <input type="checkbox" [checked]="!tabCandidats[1].parti">Indépendant Nb Followers:{{tabCandidats[1].nb}} <button (click)="add1(1)">follow</button> </p>
+<p><img [src]="tabCandidats[2].image"/>Nom:{{tabCandidats[2].nom}} <input type="checkbox" [checked]="!tabCandidats[2].parti">Indépendant Nb Followers:{{tabCandidats[2].nb}} <button (click)="add1(2)">follow</button> </p>
+<p>Nombre de candidats Indépendant: {{count()}}</p>

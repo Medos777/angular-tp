@@ -1,0 +1,20 @@
+<h1>{{titre}}</h1>
+<ul>
+<li>Nom:{{etudiant.nom}}</li>
+<li>Moyenne:{{etudiant.moyenne}}</li>
+
+<li *ngIf="etudiant.moyenne<10; then BlocThen; else BlocElse"></li>
+
+<ng-template #BlocThen> <li>Dècision:Redouble</li> </ng-template>
+<ng-template #BlocElse> 
+        Choisir une spécialité
+        <select [(ngModel)]="choix" >
+                <option value="DSI">DSI</option>
+                <option>RSI</option>
+                <option>SEM</option>
+        </select>
+        Vous avez choisi {{choix}}
+</ng-template>
+
+
+</ul>

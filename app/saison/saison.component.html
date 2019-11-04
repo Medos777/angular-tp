@@ -1,0 +1,20 @@
+<h1>{{titre}}</h1>
+<input type="number" [(ngModel)]="val"/><br>
+
+    <span [ngSwitch]="val">
+<span *ngSwitchCase="12">Le mois {{val}} est en Automne </span>
+<span *ngSwitchCase="1"> Le mois {{val}} est en Automne </span>
+<span *ngSwitchCase="2"> Le mois {{val}} est en Automne </span>
+
+<span *ngSwitchCase="3"> Le mois {{val}} est en Printemps </span>
+<span *ngSwitchCase="4"> Le mois {{val}} est en Printemps </span>
+<span *ngSwitchCase="5"> Le mois {{val}} est en Printemps </span>
+
+<span *ngSwitchCase="6"> Le mois {{val}} est en été </span>
+<span *ngSwitchCase="7"> Le mois {{val}} est en été </span>
+<span *ngSwitchCase="8"> Le mois {{val}} est en été </span>
+
+<span *ngSwitchCase="9"> Le mois {{val}} est en Hiver </span>
+<span *ngSwitchCase="10"> Le mois {{val}} est en Hiver </span>
+<span *ngSwitchCase="11"> Le mois {{val}} est en Hiver </span>
+    </span>

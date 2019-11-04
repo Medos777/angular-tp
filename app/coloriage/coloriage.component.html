@@ -1,0 +1,23 @@
+<h2 [ngClass]="choix">Coloriage</h2>
+Couleur <input type="text" #col/><br/>
+<select #fontf>
+        <option value="Arial">Arial</option>
+        <option value="Calibri">Calibri</option>
+        <option value="Times New Roman">Times New Roman</option>
+    </select>
+<button (click)="set(col.value,fontf.value)">Changer</button>
+    <span [style.color]="color" [style.font-family]="fontfam" >Résultat </span>
+    
+    <br/>
+    Choix du thème:
+    <input type="radio" name="r1" value="ete" [(ngModel)]="choix"> Eté
+    <input type="radio" name="r1" value="standard" [(ngModel)]="choix"> Standard
+    <input type="radio" name="r1" value="sombre" [(ngModel)]="choix"> Sombre
+
+
+<!--
+    
+ 
+-->
+  
+

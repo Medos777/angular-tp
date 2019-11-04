@@ -1,0 +1,18 @@
+  
+<h1>{{titre}}</h1>
+<ul>
+
+    <li *ngFor="let t of etudiants; let i=index" >
+    {{i+1|degree}}
+    <ul>
+    <li> {{t.prenom}} {{t.nom|uppercase}} </li>
+    <li> {{t.date|date}}  </li>
+    <li [ngClass]="(t.moyenne>=16)?'c1':'c2'" > {{t.moyenne|mention}}  </li>
+
+    <li *ngIf="t.ville!='Tunis'"> {{t.ville}}  </li>
+
+
+    </ul>
+
+</li> 
+</ul>
